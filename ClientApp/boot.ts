@@ -9,7 +9,7 @@ declare const IS_DEV_BUILD: boolean; // The value is supplied by Webpack during 
 
 export function configure(aurelia: Aurelia) {
 	aurelia.use.standardConfiguration()
-	 .plugin(PLATFORM.moduleName('aurelia-syncfusion-bridge'), (syncfusion: any) => syncfusion.ejGrid());
+	 .plugin(PLATFORM.moduleName('aurelia-syncfusion-bridge'), (syncfusion: any) => syncfusion.useAll());
 
 	if (IS_DEV_BUILD) {
 		aurelia.use.developmentLogging();

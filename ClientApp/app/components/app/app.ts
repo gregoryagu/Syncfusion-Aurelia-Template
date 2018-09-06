@@ -26,7 +26,16 @@ export class App {
 			moduleId: "../fetchdata/fetchdata",
 			nav: true,
 			title: "Fetch data"
-			}, {
+			}
+			, {
+				route: 'menu',
+				name: 'menu',
+				settings: { icon: 'th' },
+				moduleId: PLATFORM.moduleName('../menu/menu'),
+				nav: true,
+				title: 'Menu'
+			},
+			{
 				route: 'grid',
 				name: 'grid',
 				settings: { icon: 'th' },
